@@ -1,0 +1,56 @@
+{
+   "card":[
+	  {
+		 "name":"Test Knight",
+		 "faction":"knights",
+		 "health":12,
+		 "description":"A cool knight description",
+		 "abilities":{
+			
+		 },
+		 "goal":{
+			"type": "defeat",
+			"parameter":"zombies"
+		 }
+	  },
+	  {
+		 "name":"Test Zombie",
+		 "faction":"zombies",
+		 "health":10,
+		 "description":"A cool zombie description",
+		 "abilities":{
+			
+		 },
+		 "goal":{
+			"type": "defeat",
+			"parameter":"knights"
+		 }
+	  },
+	  {
+		 "name":"Test Zombie 2",
+		 "faction":"zombies",
+		 "health":10,
+		 "description":"A cool zombie description",
+		 "abilities":{
+			
+		 },
+		 "goal":{
+			"type": "defeat",
+			"parameter":"knights"
+		 }
+	  },
+	  {
+		 "name":"Test Knight 2",
+		 "faction":"knights",
+		 "health":12,
+		 "description":"A cool knight description",
+		 "abilities":{
+			
+		 },
+		 "goal":{
+			"type": "defeat",
+			"parameter":"zombies"
+		 }
+	  }
+   ]
+}

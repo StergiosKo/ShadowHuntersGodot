@@ -1,0 +1,222 @@
+{
+   "card":[
+	  {
+		 "name":"Protecting Cape",
+		 "cardtype":"equipment",
+		 "color":"blue",
+		 "description":"You deal -1 combat damage and receive -1 combat damage",
+		 "effects":[
+			{
+			   "type":"add_stat",
+				"effect_type":"attack",
+			   "value":"-1"
+			},
+			{
+			   "type":"add_stat",
+				"effect_type":"defense",
+			   "value":"1"
+			}
+		 ],
+		 "cost":"40",
+		 "amount":"3"
+	  },
+	  {
+		 "name":"Healing Fountain",
+		 "cardtype":"action",
+		 "color":"blue",
+		 "description":"You heal 2",
+		 "effects":[
+			{
+				"type":"auto",
+				"target":"self",
+				"effect_type":"heal",
+				"value":"2"
+			}
+		 ],
+		 "cost":"0",
+		 "amount":"3"
+	  },
+	  {
+		 "name":"Frost Armor",
+		 "cardtype":"equipment",
+		 "color":"blue",
+		 "description":"You can't be dealt non-combat damage",
+		 "effects":[
+			{
+				"type":"add_stat",
+				"effect_type":"nc-defense",
+				"value":"99"
+			}
+		 ],
+		 "cost":"100",
+		 "amount":"1"
+	  },
+	  {
+		 "name":"Mirror of Reflection",
+		 "cardtype":"action",
+		 "color":"blue",
+		 "description":"Reveal your card and heal full",
+		 "effects":[
+			{
+				"type":"auto",
+				"effect_type":"reveal",
+				"target":"self",
+				"value":"all"
+			},
+			{
+				"type":"auto",
+				"target":"self",
+				"effect_type":"heal",
+				"value":"99"
+			}
+		 ],
+		 "cost":"0",
+		 "amount":"1"
+	  },
+	  {
+		 "name":"Flaming Sword",
+		 "cardtype":"equipment",
+		 "color":"red",
+		 "description":"You roll only the 1d4 dice for combat damage",
+		 "effects":[
+			{
+				"type":"roll",
+				"effect_type":"attack",
+				"value":"4"
+			}
+		 ],
+		 "cost":"50",
+		 "amount":"2"
+	  },
+	  {
+		 "name":"Raging Fist",
+		 "cardtype":"equipment",
+		 "color":"red",
+		 "description":"You deal 1 extra combat damage",
+		 "effects":[
+			{
+			   "type":"add_stat",
+			   "effect_type":"attack",
+			   "value":"1"
+			}
+		 ],
+		 "cost":"50",
+		 "amount":"2"
+	  },
+	  {
+		 "name":"Thiefing",
+		 "cardtype":"action",
+		 "color":"red",
+		 "description":"Steal a random equipment from target player",
+		 "effects":[
+			{
+				"type":"choose",
+				"target":"other",
+				"effect_type":"steal",
+				"value":"1"
+			}
+		 ],
+		 "cost":"0",
+		 "amount":"2"
+	  },
+	  {
+		 "name":"Trap Hole",
+		 "cardtype":"action",
+		 "color":"red",
+		 "description":"Target player receives 2 damage",
+		 "effects":[
+			{
+				"type":"choose",
+				"target":"other",
+				"effect_type":"damage",
+				"value":"2"
+			}
+		 ],
+		 "cost":"0",
+		 "amount":"2"
+	  },
+	  {
+		 "name":"Hunting Flare",
+		 "cardtype":"action",
+		 "color":"green",
+		 "description":"Target player reveals their card to you",
+		 "effects":[
+			{
+				"type":"auto",
+				"effect_type":"reveal",
+				"target":"other"
+			}
+		 ],
+		 "cost":"0",
+		 "amount":"1"
+	  },
+	  {
+		 "name":"Queen's Blackmail",
+		 "cardtype":"action",
+		 "color":"green",
+		 "description":"If target player is a knight, you steal a random equipment from them",
+		 "effects":[
+			{
+				"type":"condition",
+				"condition":"facttion",
+				"parameter":"knight",
+				"effect":"equipment",
+				"value":"random"
+			}
+		 ],
+		 "cost":"0",
+		 "amount":"2"
+	  },
+	  {
+		 "name":"Grave Rummage",
+		 "cardtype":"action",
+		 "color":"green",
+		 "description":"If target player is a zombie, you steal a random equipment from them",
+		 "effects":[
+			{
+				"type":"condition",
+				"condition":"facttion",
+				"parameter":"zombie",
+				"effect":"steal",
+				"value":"random"
+			}
+		 ],
+		 "cost":"0",
+		 "amount":"2"
+	  },
+	  {
+		 "name":"Crusade Interrogation",
+		 "cardtype":"action",
+		 "color":"green",
+		 "description":"If target player is a zombie, they take 2 damage",
+		 "effects":[
+			{
+				"type":"condition",
+				"condition":"facttion",
+				"parameter":"zombie",
+				"effect":"damage",
+				"value":"2"
+			}
+		 ],
+		 "cost":"0",
+		 "amount":"2"
+	  },
+	  {
+		 "name":"Apocalypse",
+		 "cardtype":"action",
+		 "color":"green",
+		 "description":"If target player is a knight, they take 2 damage",
+		 "effects":[
+			{
+				"type":"condition",
+				"condition":"facttion",
+				"parameter":"knight",
+				"effect":"damage",
+				"value":"2"
+			}
+		 ],
+		 "cost":"0",
+		 "amount":"2"
+	  }
+   ]
+}

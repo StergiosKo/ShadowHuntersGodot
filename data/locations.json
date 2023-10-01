@@ -1,0 +1,119 @@
+{
+   "locations":[
+	  {
+		 "name":"Forest of Secrets",
+		 "art":"/src/etc.png",
+		 "dice_rolls":[2,3],
+		 "description":"Draw a green card",
+		 "effects":[
+			{
+				"type":"auto",
+				"effect_type":"draw",
+				"card":"green"
+			}
+		]
+	  },
+	  	  {
+		 "name":"Lands of Imagination",
+		 "art":"/src/etc.png",
+		 "dice_rolls":[4],
+		 "description":"Draw a green, red or blue card",
+		 "effects":[
+			{
+				"type":"choose",
+				"effect_type":"draw",
+				"card":[
+					"green",
+					"red",
+					"blue"
+				]
+			}
+		]
+	  },
+	  {
+		 "name":"Goblin Camp",
+		 "art":"/src/etc.png",
+		 "dice_rolls":[5],
+		 "description":"Draw a red card",
+		 "effects":[
+			{
+				"type":"auto",
+				"effect_type":"draw",
+				"card":"red"
+			}
+		]
+	  },
+	  {
+		 "name":"Temple of Alune",
+		 "art":"/src/etc.png",
+		 "dice_rolls":[6],
+		 "description":"Draw a blue card",
+		 "effects":[
+			{
+				"type":"auto",
+				"effect_type":"draw",
+				"card":"blue"
+			}
+		]
+	  },
+	  {
+		 "name":"Realm of Teleportation",
+		 "art":"/src/etc.png",
+		 "dice_rolls":[7],
+		 "description":"Move to target location",
+		 "effects":[
+			{
+				"type":"choose",
+				"effect_type":"move",
+				"target":[
+					"location"
+				]
+			}
+		]
+	  },
+	  {
+		 "name":"Lands of Balance",
+		 "art":"/src/etc.png",
+		 "dice_rolls":[8],
+		 "description":"Draw a blue or a red card",
+		 "effects":[
+			{
+				"type":"choose",
+				"effect_type":"draw",
+				"card":[
+					"red",
+					"blue"
+				]
+			}
+		]
+	  },
+	  {
+		 "name":"Cave of elves",
+		 "art":"/src/etc.png",
+		 "dice_rolls":[9],
+		 "description":"Heal 1 and deal 1 damage to target player",
+		 "effects":[
+			{
+				"type":"choose",
+				"target":"player",
+				"effect_type":"adaptive",
+				"value":"1"
+			}
+		]
+	  },
+	  {
+		 "name":"Thieves' Guild",
+		 "art":"/src/etc.png",
+		 "dice_rolls":[10],
+		 "description":"Steal a random equipment from another player",
+		 "effects":[
+			{
+				"type":"choose",
+				"target":"player",
+				"effect_type":"steal",
+				"value":"1"
+			}
+		]
+	  }
+   ]
+}
